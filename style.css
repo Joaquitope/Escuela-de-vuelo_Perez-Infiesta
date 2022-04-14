@@ -1,0 +1,303 @@
+*{
+    margin: 0;  
+}
+
+body{
+    background-color:#D6EAF8   ;
+
+}
+ 
+.titulo-principal {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 290%;
+}
+
+/* .barranav{
+    background-color: #4682B4;
+    background-image: url("./images/cielo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right;
+    position: fixed;
+    width: 270%;
+    height: 16%; 
+    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45); 
+    
+    
+}
+ */
+
+.barranav__list{display: flex;
+    list-style: none;}
+
+.barranav__list li{
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 136%;
+    display: inline-block;
+    margin: 1rem;
+    padding-left: 4%;
+
+}
+
+.barranav__list li a{
+    text-decoration: none;
+    font-size: 100%;
+    color:rgb(3, 3, 104);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.header-grid{
+    display: grid;
+    grid-template-rows: 1fr;
+    background-color: #4682B4;
+    background-image: url("./images/cielo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right;
+    position: fixed;
+    width: 270%;
+    height: 8rem; 
+    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45); 
+}
+
+.img_principal{ padding-top: 8rem;
+    width: 47rem;
+    height: 30rem;
+}
+
+.pag_aeronaves {
+    padding-top: 8%;
+}
+
+.pag_ubicacion{
+    padding-top: 9%;
+}
+
+.pag_nosotros{
+    padding-top: 9%;
+}
+
+.pag_cursos{
+    padding-top: 9%;
+}
+
+.images{
+    width: 47rem;
+    height: 30rem;
+}
+
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+}
+
+h3 { 
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem ;  
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 90%;
+    font-weight: bold;
+}
+
+.cursos {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem; 
+}
+
+.consulta {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 120%; 
+} 
+
+.redes {
+    font-size:150%;
+}
+
+textarea{
+    resize: none;
+}
+
+/* .anchor{
+    width: 70%;
+    height: 70%;
+}
+ */
+footer ul {
+    list-style: none;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+    width: 92rem;
+    height: 3rem;
+    padding-top: 1rem;
+}
+
+footer ul a{
+    text-decoration: none;
+    font-size: 100%;
+    color:rgb(3, 3, 104);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+    height: 70%;
+}
+
+.logonav{
+    padding-top: 0%;
+    margin-left: 0%;
+    width: 2rem;
+}
+
+/* a{
+    text-decoration: none;
+    font-size: 100%;
+    color:rgb(3, 3, 104);
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}  */
+
+footer{
+    background-color: rgba(28, 93, 136, 0.452); 
+    padding-top: 0px; 
+}
+
+.mainContent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+}
+
+.fotoPrincipal{
+    grid-area: 1 / 1 / 2 / 2; }
+
+.videoPrincipal {
+    grid-area: 1 / 2 / 2 / 3; }   
+
+.Form{
+    grid-column: 1/2; }  
+
+.mainAeronaves{
+    padding-top: 6%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 10px;
+}
+
+.gpq {grid-area: 1 / 1 / 2 / 2;}   
+
+.gkc { grid-area: 1 / 2 / 2 / 3;}
+
+.ccl { grid-area: 2 / 1 / 3 / 2;}
+
+.chf { grid-area: 2 / 2 / 3 / 3; }
+
+.mainCursos{
+    padding-top: 9%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-row-gap: 10px;
+}
+
+.ppa {grid-area: 1 / 1 / 2 / 2; }
+
+.pca {grid-area: 1 / 2 / 2 / 3;
+    padding-top: 5%;
+} 
+
+.simu { grid-column: 1/2; }
+
+
+
+@media only screen and (max-width: 320px){
+body{  3rem;}
+
+
+    .header-grid{ grid-area: 1 / 1 / 2 / 2; 
+        background-color: #4682B4;
+    background-image: url("./images/cielo.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right;
+    position: fixed;
+    width: 53%;
+    height: 12rem; 
+    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45);
+    }
+
+    .fotoPrincipal{
+        padding-top: 3rem;
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .videoPrincipal{grid-area: 3 / 1 / 4 / 1;
+    padding-top: 0rem;
+    }
+
+    .img_principal{width: 105%;
+    height: 28rem;}
+
+
+    .Form{grid-area: 4 / 1 / 5 / 2;}
+
+    .footer-grid{grid-area: 2 / 1 / 2 / 1;
+    height: 12rem;
+    width: 90rem;
+
+    }
+
+  
+
+
+    /* .header-grid{
+        display: grid;
+        grid-template-rows: 1fr;
+        background-color: #4682B4;
+        background-image: url("./images/cielo.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position:right;
+        position: fixed;
+        width: 100%;
+        height: 22%; 
+        box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45); 
+
+    }
+
+    .barranav__list li{ 
+            text-decoration: none;
+            list-style: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 25px;
+            display: flex;
+            margin: 1rem;
+            padding-left: 4%; 
+        }  
+
+        .titulo-principal {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 170%;
+            width: 320px;
+        }
+        .mainContent{
+            padding-top: 12rem;
+            display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+        }
+ */
+        
