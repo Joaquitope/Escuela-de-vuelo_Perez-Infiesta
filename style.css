@@ -1,34 +1,16 @@
 *{
-    margin: 0;  
+    margin: 0;
+    padding: 0;  
 }
 
 body{
     background-color:#D6EAF8   ;
-
 }
  
 .titulo-principal {
     font-family: 'Montserrat', sans-serif;
     font-size: 290%;
 }
-
-/* .barranav{
-    background-color: #4682B4;
-    background-image: url("./images/cielo.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:right;
-    position: fixed;
-    width: 270%;
-    height: 16%; 
-    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45); 
-    
-    
-}
- */
-
-.barranav__list{display: flex;
-    list-style: none;}
 
 .barranav__list li{
     text-decoration: none;
@@ -37,8 +19,16 @@ body{
     font-size: 136%;
     display: inline-block;
     margin: 1rem;
-    padding-left: 4%;
+    padding-left: 10%;
+}
 
+.barranav__list li :hover{
+    transform: scale(1.2);
+    color: azure;
+    text-shadow: 0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207);
 }
 
 .barranav__list li a{
@@ -55,42 +45,59 @@ body{
     display: grid;
     grid-template-rows: 1fr;
     background-color: #4682B4;
-    background-image: url("./images/cielo.jpg");
+    background-image: url("./images/cielo3.jpg");
     background-repeat: no-repeat;
     background-size:cover;
     background-position:right;
     position: fixed;
-    width: 270%;
+    width: 100%;
     height: 8rem; 
     box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45); 
+
+}
+
+.logonav{
+    padding-top: 0%;
+    margin-left: 0%;
+    width: 2rem;
 }
 
 .img_principal{ padding-top: 8rem;
-    width: 47rem;
+    width: 100%;
     height: 30rem;
 }
 
-.pag_aeronaves {
-    padding-top: 8%;
+.mainUbicacion{
+    padding-top:0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr repeat(1, 1fr);
+    padding: 0%;
+   
 }
 
-.pag_ubicacion{
-    padding-top: 9%;
+.donde-estamos{
+    padding-top: 9%;    
 }
 
+.mapa{
+    height: 31rem;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
 .pag_nosotros{
     padding-top: 9%;
 }
 
-.pag_cursos{
-    padding-top: 9%;
-}
-
 .images{
-    width: 47rem;
+    width: 100%;
     height: 30rem;
 }
 
+.imagenes-nosotros{
+    width: 47rem;
+    height: 30rem;
+}
 
 h2 {
     font-family: 'Montserrat', sans-serif;
@@ -111,6 +118,7 @@ p {
 .cursos {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem; 
+    padding-top: 9%;
 }
 
 .consulta {
@@ -126,58 +134,11 @@ textarea{
     resize: none;
 }
 
-/* .anchor{
-    width: 70%;
-    height: 70%;
-}
- */
-footer ul {
-    list-style: none;
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-evenly;
-    width: 92rem;
-    height: 3rem;
-    padding-top: 1rem;
-}
-
-footer ul a{
-    text-decoration: none;
-    font-size: 100%;
-    color:rgb(3, 3, 104);
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 70%;
-    height: 70%;
-}
-
-.logonav{
-    padding-top: 0%;
-    margin-left: 0%;
-    width: 2rem;
-}
-
-/* a{
-    text-decoration: none;
-    font-size: 100%;
-    color:rgb(3, 3, 104);
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}  */
-
-footer{
-    background-color: rgba(28, 93, 136, 0.452); 
-    padding-top: 0px; 
-}
-
 .mainContent{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
 }
 
 .fotoPrincipal{
@@ -187,117 +148,229 @@ footer{
     grid-area: 1 / 2 / 2 / 3; }   
 
 .Form{
-    grid-column: 1/2; }  
+    grid-column: 1/2; } 
+    
+footer ul {
+        list-style: none;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-evenly;
+        width: 100%;
+        height: 3rem;
+        padding-top: 1rem;
+    }
+    
+footer ul :hover{
+        transform: scale(1.2);
+        color: azure;}
+    
+footer ul a{
+        text-decoration: none;
+        font-size: 100%;
+        color:rgb(3, 3, 104);
+        font-weight: bold;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 70%;
+    }
+    
+footer{
+        background-color: rgba(28, 93, 136, 0.452); 
+        padding-top: 0px; 
+        width: 100%;  
+     }
 
 .mainAeronaves{
-    padding-top: 6%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    grid-row-gap: 10px;
+    gap: 15px;
+}
+
+.titulo-aeronaves{
+    padding-top: 9%;
 }
 
 .gpq {grid-area: 1 / 1 / 2 / 2;}   
 
-.gkc { grid-area: 1 / 2 / 2 / 3;}
+.gkc { grid-area: 1 / 2 / 2 / 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
 
 .ccl { grid-area: 2 / 1 / 3 / 2;}
 
 .chf { grid-area: 2 / 2 / 3 / 3; }
 
 .mainCursos{
-    padding-top: 9%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    grid-row-gap: 10px;
+    gap: 15px;
 }
 
 .ppa {grid-area: 1 / 1 / 2 / 2; }
 
-.pca {grid-area: 1 / 2 / 2 / 3;
-    padding-top: 5%;
-} 
+.pca {grid-area: 1 / 2 / 2 / 3; } 
 
 .simu { grid-column: 1/2; }
 
+/* MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE  */
 
-
-@media only screen and (max-width: 320px){
-body{  3rem;}
-
+@media only screen and (max-width: 768px){
 
     .header-grid{ grid-area: 1 / 1 / 2 / 2; 
-        background-color: #4682B4;
+    background-color: #4682B4;
     background-image: url("./images/cielo.jpg");
     background-repeat: no-repeat;
     background-size:cover;
-    background-position:right;
-    position: fixed;
-    width: 53%;
-    height: 12rem; 
+    background-position:left;
+    width: 100%;
+    height: 13rem; 
     box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45);
+    position: absolute;
     }
 
-    .fotoPrincipal{
+
+.titulo-principal{
+    font-size: 1rem;
+    }
+
+.barranav__list li{
+    font-size: 1rem;
+    display: flex;
+    margin-left: 0%;
+}
+
+.barranav__list li a{
+    color: rgb(3, 3, 104);
+}
+
+.fotoPrincipal{
         padding-top: 3rem;
-        grid-area: 2 / 1 / 3 / 2;
-    }
-
-    .videoPrincipal{grid-area: 3 / 1 / 4 / 1;
-    padding-top: 0rem;
-    }
-
-    .img_principal{width: 105%;
-    height: 28rem;}
-
-
-    .Form{grid-area: 4 / 1 / 5 / 2;}
-
-    .footer-grid{grid-area: 2 / 1 / 2 / 1;
-    height: 12rem;
-    width: 90rem;
-
-    }
-
-  
-
-
-    /* .header-grid{
-        display: grid;
-        grid-template-rows: 1fr;
-        background-color: #4682B4;
-        background-image: url("./images/cielo.jpg");
-        background-repeat: no-repeat;
-        background-size:cover;
-        background-position:right;
-        position: fixed;
+        grid-area: 2 / 1 / 3 / 3;
         width: 100%;
-        height: 22%; 
-        box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45); 
-
+        height: 6rem;
     }
 
-    .barranav__list li{ 
-            text-decoration: none;
-            list-style: none;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 25px;
-            display: flex;
-            margin: 1rem;
-            padding-left: 4%; 
-        }  
+.videoPrincipal{grid-area: 3 / 1 / 4 / 4;
+    padding-top: 13rem;
+    width: 98%;
+    height: 6rem;
+    }
 
-        .titulo-principal {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 170%;
-            width: 320px;
-        }
-        .mainContent{
-            padding-top: 12rem;
-            display: grid;
-grid-template-columns: repeat(5, 1fr);
-grid-template-rows: repeat(5, 1fr);
-        }
- */
+.img_principal{width: 100%;
+    height: 18rem;}
+
+
+.Form{grid-area: 4 / 1 / 5 / 2;
+    padding-top: 20rem;}
+
+.footer-grid{
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    justify-items: start;
+    }
+
+
+.mainAeronaves{
+        padding-top: 0%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
         
+        
+    }
+
+.titulo-aeronaves{
+    padding-top: 13rem;
+}
+
+.gpq{
+    grid-column-start: 1;
+     grid-column-end: 3;
+    }
+    
+.gkc{
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        padding-top:9%;
+    }
+
+.ccl{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 3; 
+        padding-top: 0;
+    }
+
+.chf{
+        grid-row-start: 4;
+        grid-row-end: 5;
+        grid-column-start: 1;
+     grid-column-end: 3;
+    }
+    
+.images{
+    width: 100%;
+    height: 54%;  
+}
+
+.imagenes-nosotros{
+    width: 100%;
+    height: 54%; 
+}
+
+.mainUbicacion{
+    padding-top:16%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 0%;
+    
+}
+
+.donde-estamos{
+grid-row-start: 2;
+ grid-row-end: 3;
+ padding-top: 5rem;
+}
+
+.mapa{
+    grid-row-start: 3;
+    grid-row-end: 4;
+   width: 100%;
+}
+
+.pag_nosotros{
+    padding-top: 13rem;
+}
+
+.mainCursos{
+    padding-top: 0%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(1, 1fr);
+    
+}
+
+.cursos{
+    padding-top: 13rem;  
+}
+
+.ppa {grid-area: 2 / 1 / 3 / 2; }
+
+.pca {grid-area: 3 / 1 / 4 / 2; } 
+
+.simu { grid-area: 4 / 1 / 5 / 2;
+padding-top: 10%; }
+
+}
