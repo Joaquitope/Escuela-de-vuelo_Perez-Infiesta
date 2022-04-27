@@ -7,54 +7,6 @@ body{
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 }
  
-/* .titulo-principal {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 290%;
-}
-
-.barranav__list li{
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 136%;
-    display: inline-block;
-    margin: 1rem;
-    padding-left: 10%;
-}
-
-.barranav__list li :hover{
-    transform: scale(1.2);
-    color: azure;
-    text-shadow: 0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
-    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
-    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
-    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207);
-}
-
-.barranav__list li a{
-    text-decoration: none;
-    font-size: 100%;
-    color:rgb(3, 3, 104);
-    font-weight: bold;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.header-grid{
-    display: grid;
-    grid-template-rows: 1fr;
-    background-color: #4682B4;
-    background-image: url("./images/cielo3.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position:right;
-    position: fixed;
-    width: 100%;
-    height: 8rem; 
-    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45); 
-
-} */
 
 section{
     height: 45rem;
@@ -101,6 +53,8 @@ section{
     0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
     0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207);   
 }
+
+
 
 .carousel-item img{
     height: 37rem;
@@ -175,8 +129,6 @@ p {
     font-size: 2rem; 
     padding-top: 6%;
 }
-
-
     
 .footer_logos :hover{
         transform: scale(1.2);
@@ -190,7 +142,7 @@ p {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: center;
         width: 100%;
         height: 70%;
         padding-bottom: 1%;
@@ -258,10 +210,7 @@ footer{
     position: absolute;
     }
 
-.footer{
-    
-   bottom:0;
-}
+
 
 .navbar-brand{
  display: flex;
@@ -297,11 +246,6 @@ footer{
     width: 100%;
     height: 27rem;
 }
-
-
-
-
-
 
 .mainAeronaves{
         padding-top: 0%;
@@ -400,7 +344,6 @@ padding-top: 10%; }
 section{
     padding-top: 8rem;
 }
-
 
 
 }
