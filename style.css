@@ -7,7 +7,7 @@ body{
     background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
 }
  
-.titulo-principal {
+/* .titulo-principal {
     font-family: 'Montserrat', sans-serif;
     font-size: 290%;
 }
@@ -54,7 +54,13 @@ body{
     height: 8rem; 
     box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45); 
 
+} */
+
+section{
+    height: 45rem;
+    padding-top: 7%;
 }
+
 
 .logonav{
     padding-top: 0%;
@@ -62,7 +68,55 @@ body{
     width: 2rem;
 }
 
-.img_principal{ padding-top: 8rem;
+.navbar{
+    background-image:url("./images/cielo3.jpg") ;
+    background-color: #4682B4;
+    background-image: url("./images/cielo3.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right;
+    position: fixed;
+    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45);
+    width: 100%; 
+    z-index:1000;
+}
+
+.nav-link{
+    color:rgb(3, 3, 104) !important ;
+    font-size: 18px !important;
+}
+
+.nav-item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-left: 30%;
+    color:rgb(3, 3, 104);
+}
+
+.nav-item  :hover{
+    transform: scale(1.2);
+    color: azure;
+    text-shadow: 0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207);   
+}
+
+.carousel-item img{
+    height: 37rem;
+    width: 100%;
+}
+
+.img_principal{
+    height: 37rem;
+    width: 100%;
+}
+
+.carrete{
+    height: 40rem;
+}
+
+.images{
     width: 100%;
     height: 30rem;
 }
@@ -73,26 +127,27 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr repeat(1, 1fr);
     padding: 0%;
-   
 }
 
 .donde-estamos{
-    padding-top: 9%;    
+    padding-top: 6%;    
 }
 
 .mapa{
-    height: 31rem;
+    height: 33em;
+    display: flex;
+    justify-content: center;
     grid-row-start: 2;
     grid-row-end: 2;
 }
 .pag_nosotros{
-    padding-top: 9%;
+    padding-top: 6%;
 }
 
-.images{
-    width: 100%;
-    height: 30rem;
+.container{
+    height: 10rem;
 }
+
 
 .imagenes-nosotros{
     width: 47rem;
@@ -109,7 +164,6 @@ h3 {
     font-size: 2rem ;  
 }
 
-
 p {
     font-family: 'Montserrat', sans-serif;
     font-size: 90%;
@@ -119,68 +173,35 @@ p {
 .cursos {
     font-family: 'Montserrat', sans-serif;
     font-size: 2rem; 
-    padding-top: 9%;
+    padding-top: 6%;
 }
 
-.consulta {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 120%; 
-} 
 
-.redes {
-    font-size:150%;
-}
-
-textarea{
-    resize: none;
-}
-
-.mainContent{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    gap: 10px;
-}
-
-.fotoPrincipal{
-    grid-area: 1 / 1 / 2 / 2; }
-
-.videoPrincipal {
-    grid-area: 1 / 2 / 2 / 3; }   
-
-.Form{
-    grid-column: 1/2; } 
-   
-footer ul {
-        list-style: none;
-       display: flex;
-       flex-wrap: wrap;
-       justify-content: space-evenly;
-        width: 100%;
-        height: 3rem;
-        padding-top: 1rem;
-    }
     
-footer ul :hover{
+.footer_logos :hover{
         transform: scale(1.2);
         transition: 30ms;
         color: azure;}
     
-footer ul a{
+.footer_logos{
         text-decoration: none;
         font-size: 100%;
-        color:rgb(3, 3, 104);
         font-weight: bold;
+        list-style: none;
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-evenly;
         width: 100%;
         height: 70%;
+        padding-bottom: 1%;
     }
     
+.footer_logos a{
+    color:rgb(3, 3, 104);
+}
+
 footer{
         background-color: rgba(28, 93, 136, 0.452); 
-        padding-top: 0px; 
         width: 100%;  
      }
 
@@ -192,7 +213,7 @@ footer{
 }
 
 .titulo-aeronaves{
-    padding-top: 9%;
+    padding-top: 6%;
 }
 
 .gpq {grid-area: 1 / 1 / 2 / 2;}
@@ -237,47 +258,49 @@ footer{
     position: absolute;
     }
 
+.footer{
+    
+   bottom:0;
+}
+
+.navbar-brand{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.carrusel{
+    padding-top: 32%;
+    height: 160px;
+}
+
+.carousel-item img{
+    padding-top: 2rem;
+    width: 100%;
+    height: 30%;
+}
 
 .titulo-principal{
     font-size: 1rem;
+    width: 95%;
     }
 
-.barranav__list li{
-    font-size: 1rem;
-    display: flex;
-    margin-left: 0%;
-}
-
-.barranav__list li a{
-    color: rgb(3, 3, 104);
-}
-
-.fotoPrincipal{
-        padding-top: 3rem;
-        grid-area: 2 / 1 / 3 / 3;
-        width: 100%;
-        height: 6rem;
-    }
-
-.videoPrincipal{grid-area: 3 / 1 / 4 / 4;
-    padding-top: 13rem;
-    width: 98%;
-    height: 6rem;
-    }
-
-.img_principal{width: 100%;
-    height: 18rem;}
 
 
-.Form{grid-area: 4 / 1 / 5 / 2;
-    padding-top: 20rem;}
-
-.footer-grid{
-    height: 4rem;
+.img_principal{
+    padding-top: 5rem;
     width: 100%;
-    display: flex;
-    justify-items: start;
-    }
+    height: 100%;
+
+}
+
+.images-carrete{
+    width: 100%;
+    height: 27rem;
+}
+
+
+
+
 
 
 .mainAeronaves{
@@ -290,7 +313,7 @@ footer{
     }
 
 .titulo-aeronaves{
-    padding-top: 13rem;
+    padding-top: 8rem
 }
 
 .gpq{
@@ -343,7 +366,7 @@ footer{
 .donde-estamos{
 grid-row-start: 2;
  grid-row-end: 3;
- padding-top: 5rem;
+ padding-top: 1rem;
 }
 
 .mapa{
@@ -353,7 +376,7 @@ grid-row-start: 2;
 }
 
 .pag_nosotros{
-    padding-top: 13rem;
+    padding-top: 8rem;
 }
 
 .mainCursos{
@@ -361,11 +384,10 @@ grid-row-start: 2;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1, 1fr);
-    
 }
 
 .cursos{
-    padding-top: 13rem;  
+    padding-top: 8rem;  
 }
 
 .ppa {grid-area: 2 / 1 / 3 / 2; }
@@ -375,4 +397,14 @@ grid-row-start: 2;
 .simu { grid-area: 4 / 1 / 5 / 2;
 padding-top: 10%; }
 
+section{
+    padding-top: 8rem;
 }
+
+
+
+}
+
+
+
+
