@@ -426,6 +426,39 @@ section{
 
 }
 
+@media only screen and (max-width: 400px){
+
+    .sueno{
+        padding-top: 7rem;
+    }
+
+    .container-fluid-carousel{
+        width: 92%;
+        margin-left: 4%;
+        height: 37rem;
+    }
+
+.titulo-aeronaves{
+    padding-top: 6rem;
+}
+
+    .container-fluid-aeronaves{
+        width: 92%;
+        margin-left: 4%;
+    }
+    
+    .pag_nosotros{
+        padding-top: 7rem;
+    }
+
+    .container-fluid-nosotros{
+        width: 92%;
+        margin-left: 4%;
+    }
+
+
+}
+
 /* MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE MEDIA QUERIE  */
 /* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE  */
 @media only screen and (max-width: 320px){
@@ -445,6 +478,7 @@ section{
 .container-fluid-carousel{
     width: 92%;
     margin-left: 4%;
+    height: 28rem;
 }
 
 .container-fluid-aeronaves{
