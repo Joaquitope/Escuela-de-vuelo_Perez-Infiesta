@@ -1,0 +1,19 @@
+.container-fluid-aeronaves{
+    @extend %carousel;
+}
+
+.titulo-aeronaves{
+    padding-top: 6%;
+    margin-left: 1%;
+}
+
+
+.container-fluid-nosotros{
+    @extend %carousel;
+}
+
+.container-fluid-cursos{
+    @extend %carousel;
+}
+
+

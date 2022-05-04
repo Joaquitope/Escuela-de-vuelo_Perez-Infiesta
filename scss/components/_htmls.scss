@@ -1,0 +1,26 @@
+
+.donde-estamos{
+    padding-top: 6%;    
+}
+
+.mapa{
+    height: 33rem;
+    display: flex;
+    justify-content: center;
+    grid-row-start: 2;
+    grid-row-end: 2;
+}
+.pag_nosotros{
+    padding-top: 6%;
+}
+
+.imagenes-nosotros{
+    width: 46rem;
+    height: 30rem;
+}
+
+.cursos {
+    font-family: $font;
+    font-size: $f-size; 
+    padding-top: 6%;
+}

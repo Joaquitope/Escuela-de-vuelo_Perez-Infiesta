@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;  
+}
+
+body{
+    background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+}
+
+
+.logonav{
+    padding-top: 0%;
+    margin-left: 0%;
+    width: 2rem;
+}
+
+
+.navbar{
+    background-color: #4682B4;
+    background-image: url("../images/cielo3.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:right;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    box-shadow: 10px 10px 5px 1px rgba(0,0,0,0.45);
+    width: 100%; 
+    z-index:1000;
+}
+
+.nav-link{
+    color: $color-principal !important ;
+    color: azure;
+    text-shadow: 0 0 5px rgb(255, 255, 255),0 0 5px rgb(255, 255, 255),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207) !important ;
+    font-size: 18px !important;
+    
+}
+
+.nav-item{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    padding-left: 30%;
+    color: $color-principal;
+    
+}
+
+.nav-item :hover{
+    transform: scale(1.2);
+    color: azure;
+    text-shadow: 0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
+    0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207);   
+}
+
+.redes{
+    font-size: 104%;
+    font-family: $font;
+    font-weight:bold;
+}
+
+footer{
+    background-color: rgba(28, 93, 136, 0.452); 
+    width: 100%;
+}
+    
+ .footer_logos :hover{
+    transform: scale(1.2);
+    transition: 30ms;
+    color: azure;}
+
+.footer_logos{
+    text-decoration: none;
+    font-size: 100%;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    height: 70%;
+    padding-bottom: 1%;
+
+    a{
+        color:$color-principal;
+    }
+} 
+
+h2{
+    font-family: $font;
+    font-size: $f-size;
+}
+
+h3{
+    font-family: $font;
+    font-size: $f-size;
+}
+
+p{
+  font-family:  $font ;
+   font-size: 90%;
+    font-weight: bold;
+}
+
+.images{
+    width: 100%;
+    height: 30rem;
+}
+
