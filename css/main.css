@@ -38,7 +38,7 @@ body {
 .nav-item {
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  padding-left: 30%;
+  padding-left: 25%;
   color: #030368; }
 
 .nav-item :hover {
@@ -52,7 +52,7 @@ body {
   font-weight: bold; }
 
 footer {
-  background-color: rgba(28, 93, 136, 0.452);
+  background-color: #1c5d8873;
   width: 100%; }
 
 .footer_logos :hover {
@@ -73,6 +73,10 @@ footer {
   padding-bottom: 1%; }
   .footer_logos a {
     color: #030368; }
+
+h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem; }
 
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -109,7 +113,6 @@ p {
   padding-top: 7rem;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
-  font-weight: bold;
   margin-left: 1%; }
 
 .titulo-aeronaves {
@@ -120,7 +123,7 @@ p {
   padding-top: 6%; }
 
 .mapa {
-  height: 33rem;
+  height: 34rem;
   display: flex;
   justify-content: center;
   grid-row-start: 2;
@@ -163,14 +166,15 @@ p {
   .nav-item {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
-    padding-left: 15%;
+    padding-left: 10%;
     color: #030368; }
   .nav-item :hover {
     transform: scale(1.2);
     color: azure;
     text-shadow: 0 0 5px #118acf, 0 0 5px #118acf, 0 0 5px #118acf, 0 0 5px #118acf, 0 0 5px #118acf, 0 0 5px #118acf, 0 0 5px #118acf, 0 0 5px #118acf; }
-  .titulo-aeronaves {
-    padding-top: 6rem; }
+  h1 {
+    font-size: 100%;
+    font-weight: bold; }
   section {
     padding-top: 6rem; }
   .carousel-item img {
@@ -182,6 +186,8 @@ p {
   .container-fluid-carousel {
     width: 96%;
     margin-left: 2%; }
+  .titulo-aeronaves {
+    padding-top: 6rem; }
   .container-fluid-aeronaves {
     width: 96%;
     margin-left: 2%; }
@@ -196,7 +202,9 @@ p {
     width: 100%;
     height: 20rem; }
   .donde-estamos {
-    padding-top: 9%; } }
+    padding-top: 9%; }
+  .mapa {
+    height: 17rem; } }
 
 /* TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET TABLET  */
 @media only screen and (max-width: 768px) {
@@ -209,6 +217,10 @@ p {
   .container-fluid-nosotros {
     width: 96%;
     margin-left: 2%; }
+  h1 {
+    font-size: 2rem; }
+  .sueno {
+    padding-top: 5rem; }
   .navbar-brand {
     display: flex;
     flex-wrap: wrap; }
@@ -250,9 +262,10 @@ p {
   .mapa {
     grid-row-start: 3;
     grid-row-end: 4;
-    width: 100%; }
+    width: 100%;
+    height: 22rem; }
   .pag_nosotros {
-    padding-top: 4rem; }
+    padding-top: 5rem; }
   section {
     padding-top: 8rem; }
   .images {
@@ -260,10 +273,15 @@ p {
   .aeronaves {
     padding: 0%;
     height: 67rem;
-    margin: 0%; } }
+    margin: 0%; }
+  .titulo-aeronaves {
+    padding-top: 5rem; } }
 
 /* MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL MOBILE REAL  */
 @media only screen and (max-width: 500px) {
+  h1 {
+    font-size: 100%;
+    font-weight: bold; }
   .sueno {
     padding-top: 7rem; }
   .container-fluid-carousel {
@@ -279,14 +297,19 @@ p {
     padding-top: 7rem; }
   .container-fluid-nosotros {
     width: 92%;
-    margin-left: 4%; } }
+    margin-left: 4%; }
+  .mapa {
+    height: 36rem; } }
 
 /* MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE  */
 @media only screen and (max-width: 320px) {
+  h1 {
+    font-size: 1rem;
+    font-weight: bold; }
   .sueno {
-    padding-top: 42%; }
+    padding-top: 32%; }
   .titulo-aeronaves {
-    padding-top: 8rem; }
+    padding-top: 6rem; }
   .img_principal {
     height: 15rem; }
   .container-fluid-carousel {
@@ -309,4 +332,6 @@ p {
     height: 10rem;
     width: 100%; }
   .pag_nosotros {
-    padding-top: 9rem; } }
+    padding-top: 6rem; }
+  .mapa {
+    height: 14rem; } }

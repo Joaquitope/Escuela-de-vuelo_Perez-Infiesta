@@ -1,5 +1,11 @@
 $color-principal :rgb(3, 3, 104);
 
+$colores:( 
+color-principal: $color-principal,
+color-secundario: #1c5d8873,
+color-hover:azure,
+);
+
 $font:'Montserrat', sans-serif;
 
 $f-size: 2rem;
@@ -11,5 +17,28 @@ $f-size: 2rem;
     margin-left: 1%;  
 }
 
+@mixin mediaQuery($pantalla) {
+    @if $pantalla == "mobile" {
+        @media only screen and (max-width: 320px){
+            @content;
+        }
+    };
+    @if $pantalla == "celphone" {
+        @media only screen and (max-width: 500px){
+            @content;
+        }
+    };
+    @if $pantalla == "tablet" {
+        @media only screen and (max-width: 768px){
+            @content;
+        }
+    };
+    @if $pantalla == "laptop" {
+        @media only screen and (max-width: 1300px){
+            @content;
+        }
+    }
+}
+ 
 
 

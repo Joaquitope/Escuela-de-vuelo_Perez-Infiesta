@@ -31,7 +31,7 @@ body{
 
 .nav-link{
     color: $color-principal !important ;
-    color: azure;
+    color: map-get($colores, color-hover);
     text-shadow: 0 0 5px rgb(255, 255, 255),0 0 5px rgb(255, 255, 255),
     0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207) !important ;
     font-size: 18px !important;
@@ -41,14 +41,14 @@ body{
 .nav-item{
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
-    padding-left: 30%;
+    padding-left: 25%;
     color: $color-principal;
     
 }
 
 .nav-item :hover{
     transform: scale(1.2);
-    color: azure;
+    color: map-get($colores, color-hover);
     text-shadow: 0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
     0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
     0 0 5px rgb(17, 138, 207),0 0 5px rgb(17, 138, 207),
@@ -62,7 +62,7 @@ body{
 }
 
 footer{
-    background-color: rgba(28, 93, 136, 0.452); 
+    background-color: map-get($colores, color-secundario); 
     width: 100%;
 }
     
@@ -87,6 +87,12 @@ footer{
         color:$color-principal;
     }
 } 
+
+
+h1{
+    font-family: $font;
+    font-size: 2rem;
+}
 
 h2{
     font-family: $font;
